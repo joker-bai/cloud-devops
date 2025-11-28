@@ -757,7 +757,7 @@ spec:
       serviceAccountName: openebs-maya-operator
       containers:
         - name: ndm-cluster-exporter
-          image: registry.cn-hangzhou.aliyuncs.com/coolops/node-disk-operator:2.1.0
+          image: registry.cn-hangzhou.aliyuncs.com/coolops/node-disk-exporter:2.1.0
           command:
             - /usr/local/bin/exporter
           args:
@@ -828,7 +828,7 @@ spec:
       serviceAccountName: openebs-maya-operator
       containers:
         - name: node-disk-exporter
-          image: registry.cn-hangzhou.aliyuncs.com/coolops/node-disk-operator:2.1.0
+          image: registry.cn-hangzhou.aliyuncs.com/coolops/node-disk-exporter:2.1.0
           command:
             - /usr/local/bin/exporter
           args:
